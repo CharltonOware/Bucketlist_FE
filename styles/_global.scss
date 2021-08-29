@@ -8,3 +8,36 @@ body {
     @include flex(center, center);
 }
 
+ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+li {
+    @include flex(center, center);
+    border-bottom: 0.1rem solid lightgray;
+    padding: 1.5rem 0;
+    font-size: 1.6rem;
+    color: #595959;
+}
+
+i {
+    pointer-events: none;
+}
+
+.form__button {
+    width: 100%;
+    padding: 1.6rem 3.2rem;
+    font-weight: bold;
+    font-size: 1.76rem;
+    color: #ffffff;
+    border: none;
+    border-radius: $border_radius;
+    outline: none;
+    cursor: pointer;
+    background-color: $color_primary;
+}
+
+.form__button:hover {
+    background: $color_primary_dark;
+}
