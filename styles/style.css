@@ -40,9 +40,10 @@ body {
 }
 
 .form__title {
-  font: "Great+Vibes";
+  font-family: "Great Vibes", cursive;
   margin-bottom: 3.2rem;
   text-align: center;
+  font-size: 5rem;
 }
 
 .form__message {
