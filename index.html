@@ -9,7 +9,7 @@
             content="Authentication page for those wishing to access the app."
         />
     <meta name="robots" content="index,follow"/>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Bucketlist | Authenticate</title>
     <link rel="stylesheet" href="login.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
                <div class="form__input-error-message"></div>
            </div>
            <div class="form__input-group">
-            <input type="password" class="form__input" id="login-pass" autofocus placeholder="Password">
+            <input type="password" class="form__input" id="login-pass" placeholder="Password">
             <div class="form__input-error-message"></div>
         </div>
         <button class="form__button" type="submit">Log in</button>
@@ -40,17 +40,17 @@
         </p>
 
        </form>
-       <form class="form" action="" id="createAccount">
+       <form class="form form__hidden" action="" id="createAccount">
             <h1 class="form__title">Create Account</h1>
             <div class="form__message form__message-error"></div>
             <div class="form__input-group">
                 <input type="email" id="signupEmail" class="form__input" autofocus placeholder="Email Address">
             </div>
             <div class="form__input-group">
-                <input type="password" id="signupPass" class="form__input" autofocus placeholder="Password">
+                <input type="password" id="signupPass" class="form__input" placeholder="Password">
             </div>
             <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Confirm Password">
+                <input type="password" class="form__input" placeholder="Confirm Password">
                 <div class="form__input-error-message"></div>
             </div>
             <button class="form__button" type="submit">Continue</button>

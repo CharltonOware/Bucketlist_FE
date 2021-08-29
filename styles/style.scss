@@ -1,0 +1,16 @@
+
+$color_primary: #009579;
+$color_primary_dark: #007f67;
+$color_secondary: #252c6a;
+$color_error: #cc3333;
+$color_success: #4bb544;
+$border_radius: 4px;
+
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@import "global";
+@import "authenticate";

@@ -1,2 +1,121 @@
+html {
+  font-size: 62.5%;
+}
 
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authenticate {
+  width: 400px;
+  max-width: 400px;
+  margin: 1.6rem;
+  padding: 3.2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.authenticate,
+.form__input,
+.form__button {
+  font: 500 1.6rem "Raleway", sans-serif;
+  cursor: pointer;
+}
+
+.form__hidden {
+  display: none;
+}
+
+.form > * :first-child {
+  margin-top: 0;
+}
+
+.form > * :last-child {
+  margin-bottom: 0;
+}
+
+.form__title {
+  font: "Great+Vibes";
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.form__message {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.form__message-success {
+  color: #4bb544;
+}
+
+.form__message-error {
+  color: #cc3333;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 1.2rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 0.1rem solid #dddddd;
+  outline: none;
+  background: #eeeeee;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+  border-color: #009579;
+}
+
+.form__input-error {
+  color: #cc3333;
+  border-color: #cc3333;
+}
+
+.form__input-error-message {
+  margin-top: 0.8rem;
+  font-size: 1.36rem;
+  color: #cc3333;
+}
+
+.form__button {
+  width: 100%;
+  padding: 1.6rem 3.2rem;
+  font-weight: bold;
+  font-size: 1.76rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background-color: #009579;
+}
+
+.form__button:hover {
+  background: #007f67;
+}
+
+.form__button:active {
+  transform: scale(0.98);
+}
+
+.form__text {
+  text-align: center;
+}
+
+.form__link {
+  color: #252c6a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form__link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
