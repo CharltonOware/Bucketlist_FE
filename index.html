@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+            name="description"
+            content="Authentication page for those wishing to access the app."
+        />
+    <meta name="robots" content="index,follow"/>
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Bucketlist | Authenticate</title>
+    <link rel="stylesheet" href="login.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+   <section class="authenticate">
+       <form class="form" action="" id="login">
+           <h1 class="form__title">Bucketlist</h1>
+           <div class="form__message form__message-error"></div>
+           <div class="form__input-group">
+               <input type="email" class="form__input" id="login-email">
+               <div class="form__input-error-message"></div>
+           </div>
+           <div class="form__input-group">
+            <input type="password" class="form__input" id="login-pass">
+            <div class="form__input-error-message"></div>
+        </div>
+        <button class="form__button" type="submit">Log in</button>
+        <p class="form__text">
+            <a href="#" class="form__link">Forgot your password?</a>
+        </p>
+        <p class="form__text">
+            <a href="" class="form__link" id="linkCreateAccount">Don't have an account? Create account</a>
+        </p>
+
+       </form>
+       <form class="form" action="" id="createAccount">
+
+       </form>
+   </section> 
+</body>
+</html>
