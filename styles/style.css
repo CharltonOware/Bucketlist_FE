@@ -10,6 +10,25 @@ body {
   align-items: center;
 }
 
+ul {
+  padding-left: 0px;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid lightgray;
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  color: #595959;
+}
+
+i {
+  pointer-events: none;
+}
+
 .authenticate {
   width: 400px;
   max-width: 400px;
@@ -86,23 +105,6 @@ body {
   color: #cc3333;
 }
 
-.form__button {
-  width: 100%;
-  padding: 1.6rem 3.2rem;
-  font-weight: bold;
-  font-size: 1.76rem;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  outline: none;
-  cursor: pointer;
-  background-color: #009579;
-}
-
-.form__button:hover {
-  background: #007f67;
-}
-
 .form__button:active {
   transform: scale(0.98);
 }
@@ -119,4 +121,119 @@ body {
 
 .form__link:hover {
   text-decoration: underline;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100vh;
+  min-width: 600px;
+  background-image: linear-gradient(130deg, #FFFFFF, #5c8a87);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.headline {
+  font-size: 5rem;
+  font-family: "Great Vibes", cursive;
+}
+
+.container {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+}
+
+.logo {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 2.4rem 0;
+  align-items: center;
+}
+
+.main {
+  padding: 2rem;
+}
+
+form {
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 4px;
+  display: flex;
+}
+
+input[type=text] {
+  height: 30px;
+  outline: 0;
+  border: none;
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  color: #595959;
+  flex-grow: 1;
+}
+
+button {
+  font-size: 1.5rem;
+  background-color: #FFFFFF;
+  outline: 0;
+  border: none;
+  color: #009579;
+}
+
+button:hover {
+  color: #007f67;
+}
+
+.bucketList {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  height: 100%;
+}
+
+ul {
+  padding-left: 0px;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 15px 0;
+  font-size: 1rem;
+  color: #595959;
+}
+
+i {
+  pointer-events: none;
+}
+
+.bucketlist-item {
+  flex-grow: 1;
+}
+
+.clearAll {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 3px;
+  font-size: 1.4rem;
+}
+
+.clearAll:hover {
+  color: #252c6a;
+}
+
+.bucketlist-item {
+  transition: all 0.3s ease-out;
+}
+
+.bucketlist-item-fall {
+  transform: translateY(12rem) rotateZ(10deg);
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */
