@@ -71,6 +71,24 @@
     color: $color_error;
 }
 
+
+.form__button {
+    width: 100%;
+    padding: 1.6rem 3.2rem;
+    font-weight: bold;
+    font-size: 1.76rem;
+    color: #ffffff;
+    border: none;
+    border-radius: $border_radius;
+    outline: none;
+    cursor: pointer;
+    background-color: $color_primary;
+}
+
+.form__button:hover {
+    background: $color_primary_dark;
+}
+
 .form__button:active {
     transform: scale(0.98);
 }
