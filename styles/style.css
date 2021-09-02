@@ -125,6 +125,7 @@ i {
 
 .form__button:hover {
   background: #007f67;
+  color: #ffffff;
 }
 
 .form__button:active {

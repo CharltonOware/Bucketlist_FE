@@ -4,14 +4,7 @@ const listUnsigned = document.querySelector('ul');
 const clearElement = document.getElementById('clearAll');
 
 //Event handlers
-itemForm.addEventListener('submit', handleSubmitForm);
-listUnsigned.addEventListener('click', handleClickDeleteOrCheck);
-clearElement.getElementById('click',handleClearAll);
-
-console.log("SAVED TOKEN",localStorage.getItem('auth_token'));
-
-//Some useful functions
-function handleSubmitForm(e) {
+itemForm.addEventListener('submit', e => {
     e.preventDefault();
     let input = document.querySelector('input');
     if (input.value !='') {
@@ -19,20 +12,23 @@ function handleSubmitForm(e) {
     //clear input after submitting
     input.value = ''
     }
-}
+});
 
-function handleClickDeleteOrCheck(e) {
+listUnsigned.addEventListener('click', e => {
     if (e.target.name === 'checkButton')
         //toggle check button
         checkItem(e);
 
     if (e.target.name === 'deleteButton')
         deleteItem(e);
-}
+});
 
-function handleClearAll(e) {
+clearElement.getElementById('click',e => {
     document.querySelector('ul').innerHTML = '';
-}
+});
+
+console.log("SAVED TOKEN",localStorage.getItem('auth_token'));
+ 
 
 //Helper functions
 function addItem(item) {

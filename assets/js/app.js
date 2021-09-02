@@ -70,7 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log('FULL RESPONSE ', res);
             const data_1 = await res.json();
             console.log('DATA', data_1);
-            localStorage.setItem('auth_token', JSON.stringify(data_1));
+            console.log(localStorage.setItem('auth_token', JSON.stringify(data_1)));
+            window.location.replace("/bucketlist/index.html");
         } catch (error) {
             //enter logic when there is an error
             console.log(error);
