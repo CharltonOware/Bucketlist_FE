@@ -1,14 +1,14 @@
 // Declare variables/constants
+const passwordPattern = /^[a-zA-Z0-9]{8,}$/;//Define regex for password
 
 const loginurl = 'http://localhost:5000/login';
 const registrationUrl = 'http://localhost:5000/registration';
-
-// Define some useful functions
 
 // Define event handlers
 document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.querySelector("#login");
     const createAccountForm = document.querySelector("#createAccount");
+    const feedback = document.querySelector('.feedback');
 
     //Handler for clicking on the create account link
     document.querySelector("#linkCreateAccount").addEventListener("click", e=> {
@@ -30,20 +30,29 @@ document.addEventListener("DOMContentLoaded", () => {
         const email = document.querySelector("#signupEmail").value;
         const password = document.querySelector("#signupPass").value;
         console.log(email, password);
+
         try {
-            const res = await fetch(registrationUrl, {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    "email": email,
-                    "password": password,
-                })
-            });
-            const data_1 = await res.json();
-            console.log("DATA", data_1);
+            if(passwordPattern.test(password)){
+                const res = await fetch(registrationUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        "email": email,
+                        "password": password,
+                    })
+                });
+                const data_1 = await res.json();
+                console.log("DATA", data_1);
+            }
+            else{
+                feedback.textContent = 'Password must be at least 8 characters long and must \
+                                        contain at least one lowercase, one \
+                                        uppercase and one numeric character';
+            }
+            
         } catch (error) {
             console.log("Error", error);
         }

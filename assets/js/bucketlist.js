@@ -1,6 +1,6 @@
 // selectors
 const itemForm = document.querySelector('form');
-const listUnsigned = document.querySelector('ul');
+const ul = document.querySelector('ul');
 const clearElement = document.getElementById('clearAll');
 
 //Event handlers
@@ -14,7 +14,7 @@ itemForm.addEventListener('submit', e => {
     }
 });
 
-listUnsigned.addEventListener('click', e => {
+ul.addEventListener('click', e => {
     if (e.target.name === 'checkButton')
         //toggle check button
         checkItem(e);
